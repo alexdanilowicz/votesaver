@@ -93,16 +93,7 @@ function Footer(props) {
                   variant="caption"
                   href="mailto:vote.saver@gmail.com"
                   className={classes.link}
-                >Email Support
-                </Link>
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography>
-                <Link variant="caption"
-                  href="mailto:vote.saver@gmail.com"
-                  className={classes.link}
-                >Help Center
+                >Email Us
                 </Link>
               </Typography>
             </Grid>
@@ -124,32 +115,6 @@ function Footer(props) {
           </Grid>
         </Box>
       </Box>
-      <Grid
-        container
-        direction="row"
-        justify="flex-end"
-        alignItems="flex-end"
-      >
-        <Link
-          href="/"
-          className={classes.linkWithPadding}
-        >
-          2020 votesaver
-        </Link>
-        {/* TODO(Danilowicz) */}
-        <Link
-          href="/"
-          className={classes.linkWithPadding}
-        >
-          Terms of Service
-        </Link>
-        <Link
-          href="/"
-          className={classes.linkWithPadding}
-        >
-          Privacy Policy
-        </Link>
-      </Grid>
     </Box>
   );
 }

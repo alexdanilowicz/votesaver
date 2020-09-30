@@ -1,18 +1,8 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import Link from '@material-ui/core/Link';
-import { flexbox } from '@material-ui/system';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import Icon from '@material-ui/core/Icon';
-import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
 import Fab from '@material-ui/core/Fab';
-import TextField from '@material-ui/core/TextField';
-import { withRouter, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -76,13 +66,13 @@ export default function WelcomeSection(props) {
         <Typography variant="h5" className={classes.typography}>Skip the line or help a voter in need.</Typography>
       </Box>
       <Box style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <NavLink className={classes.linkNoStyle} to="/contact">
+        <a className={classes.linkNoStyle} href="https://forms.gle/mbQ9fVVo4BdfGQqLA">
           <Fab
             variant="extended"
             className={classes.myButton}
           > Sign up
           </Fab>
-        </NavLink>
+        </a>
       </Box>
     </Box>
   );
