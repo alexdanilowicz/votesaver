@@ -49,23 +49,16 @@ function Footer(props) {
             justify="flex-start"
           >
             <Grid item>
-              <Link
+              <Typography
                 className={classes.link}
                 variant="body1"
-                href="/contact"
-                target="_top"
               >
                 About votesaver.org
-              </Link>
-            </Grid>
-            <Grid item>
-              <Typography>
-                <Link className={classes.link} variant="caption" href="/contact" target="_top"> About</Link>
               </Typography>
             </Grid>
             <Grid item>
               <Typography>
-                <Link className={classes.link} variant="caption" href="/faq" target="_top">FAQ</Link>
+                <Link className={classes.link} variant="caption" href="/" target="_top">About</Link>
               </Typography>
             </Grid>
           </Grid>
@@ -78,14 +71,12 @@ function Footer(props) {
             justify="flex-start"
           >
             <Grid item>
-              <Link
+              <Typography
                 variant="body1"
-                href="/contact"
-                target="_top"
                 className={classes.link}
               >
                 Contact Us
-              </Link>
+              </Typography>
             </Grid>
             <Grid item>
               <Typography>

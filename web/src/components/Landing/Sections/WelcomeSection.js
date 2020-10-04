@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     marginTop: '15%',
     marginBottom: '5%',
     [theme.breakpoints.down('sm')]: {
-      marginTop: '30%',
+      marginTop: '10%',
     },
   },
   bigtitle: {
@@ -43,6 +43,9 @@ const useStyles = makeStyles(theme => ({
     minWidth: '200px',
     '&:hover': {
       backgroundColor: '#FFD119', // votesaver secondary
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '14px',
     },
   },
 }));
