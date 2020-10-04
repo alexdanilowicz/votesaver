@@ -3,10 +3,10 @@ import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 const Theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#FCE757', // votesaver yelow
+      main: '#FFDE59', // votesaver yellow
     },
     secondary: {
-      main: '#FCDD0B', // TODO(Danilowicz)
+      main: '#FFD119', // votersaver dark yellow
     },
     textSecondary: {
       main: '#4BB543', // TODO(Danilowicz)

@@ -39,7 +39,7 @@ function Footer(props) {
         className={classes.marginTopForBorder}
       >
         <Box>
-          <CircleLogo width="45px" height="45px" />
+          <CircleLogo width="80px" height="80px" />
         </Box>
         <Box>
           <Grid

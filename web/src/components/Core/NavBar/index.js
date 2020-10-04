@@ -124,7 +124,7 @@ function NavBar(props) {
     <HideOnScroll hide={hide}>
       <AppBar className={appBarClassName} color="default">
         <Toolbar>
-          <TextAndCircleLogo width="200px" height="40px" />
+          <TextAndCircleLogo width="200px" height="80px" />
           <Box className={classes.linkContainer} display="flex" alignItems="center">
             {links(classes.link)}
           </Box>
@@ -145,7 +145,7 @@ function NavBar(props) {
               onOpen={() => setDrawer(true)}
             >
               <Box className={classes.linkDrawerContainer} display="flex" flexDirection="column" alignItems="center">
-                <TextAndCircleLogo width="200px" height="40px" />
+                <TextAndCircleLogo width="200px" height="120px" />
                 {links(classes.drawerLink)}
               </Box>
             </SwipeableDrawer>

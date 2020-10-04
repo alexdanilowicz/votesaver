@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1500pt" height="1499.999933pt" viewBox="0 0 1500 1499.999933" version="1.2">
 <defs>
 <g>
-<symbol overflow="visible" id="glyph0-0">
+<!-- <symbol overflow="visible" id="glyph0-0">
 <path style="stroke:none;" d="M 615.671875 0 L 0 0 L 0 -861.9375 L 615.671875 -861.9375 Z M 307.828125 -486.375 L 517.171875 -800.375 L 98.5 -800.375 Z M 61.5625 -744.96875 L 61.5625 -116.984375 L 270.890625 -430.96875 Z M 344.78125 -430.96875 L 554.109375 -116.984375 L 554.109375 -744.96875 Z M 98.5 -61.5625 L 517.171875 -61.5625 L 307.828125 -375.5625 Z M 98.5 -61.5625 "/>
 </symbol>
 <symbol overflow="visible" id="glyph0-1">
@@ -54,8 +54,8 @@
 <clipPath id="clip3">
   <path d="M 513.964844 100.785156 L 1427.566406 204.761719 L 1332.410156 1040.863281 L 418.808594 936.886719 Z M 513.964844 100.785156 "/>
 </clipPath>
-</defs>
-<g id="surface1">
+</defs> -->
+<!-- <g id="surface1">
 <g style="fill:rgb(100%,87.059021%,34.899902%);fill-opacity:1;">
   <use xlink:href="#glyph0-1" x="226.540459" y="1159.423144"/>
 </g>
@@ -104,5 +104,5 @@
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph6-1" x="564.310899" y="371.52065"/>
 </g>
-</g>
+</g> -->
 </svg>

@@ -35,13 +35,14 @@ const useStyles = makeStyles(theme => ({
     },
   },
   myButton: {
-    backgroundColor: '#FCE757', // TODO(Danilowicz): import this
+    backgroundColor: '#FFDE59', // votesaver primary
     color: 'black',
     textTransform: 'none',
     marginBottom: '20px',
+    fontSize: '20px',
     minWidth: '200px',
     '&:hover': {
-      backgroundColor: '#FCDD0B', // TODO(Danilowicz): import this
+      backgroundColor: '#FFD119', // votesaver secondary
     },
   },
 }));
@@ -56,23 +57,34 @@ export default function WelcomeSection(props) {
       }}
       >
         <Typography className={classes.bigtitle} variant="h2">
-          Worried about long lines at the polls?
+          Cast a Vote, Save a Vote
         </Typography>
       </Box>
       <Box style={{
         marginTop: '2px', display: 'flex', justifyContent: 'center', alignItems: 'center',
       }}
       >
-        <Typography variant="h5" className={classes.typography}>Skip the line or help a voter in need.</Typography>
+        <Typography variant="h5" className={classes.typography}>Make a difference for voters who otherwise may not vote on Election Day.</Typography>
       </Box>
-      <Box style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <a className={classes.linkNoStyle} href="https://forms.gle/mbQ9fVVo4BdfGQqLA">
-          <Fab
-            variant="extended"
-            className={classes.myButton}
-          > Sign up
-          </Fab>
-        </a>
+      <Box style={{ display: 'flex', justifyContent: 'center' }}>
+        <Box style={{ display: 'flex', justifyContent: 'center', margin: '20px' }}>
+          <a className={classes.linkNoStyle} href="https://docs.google.com/forms/d/e/1FAIpQLSdglSmU9Aftz2uZrZAKz2ZzNVl9gfLxUwqki4KEN_K8gBtYEw/viewform?usp=sf_link">
+            <Fab
+              variant="extended"
+              className={classes.myButton}
+            > Sign up to be a Vote-Saver
+            </Fab>
+          </a>
+        </Box>
+        <Box style={{ display: 'flex', justifyContent: 'center', margin: '20px' }}>
+          <a className={classes.linkNoStyle} href=" https://docs.google.com/forms/d/e/1FAIpQLSelNqO3KWgA5tPoHTNSKUvOGsSOtFfisaAyXVr_lwVMXXRnkg/viewform?usp=sf_link">
+            <Fab
+              variant="extended"
+              className={classes.myButton}
+            > Sign up to get your Vote Saved
+            </Fab>
+          </a>
+        </Box>
       </Box>
     </Box>
   );
