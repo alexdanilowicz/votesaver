@@ -6,7 +6,7 @@ import TextAndCircleLogoSource from '../../../img/logos/CircleAndText.svg';
 const TextAndCircleLogo = (props) => {
   return (
     <Box width={props.width} height={props.height}>
-      <NavLink to="/" exact>
+      <NavLink to="/" target="_top" exact>
         <TextAndCircleLogoSource width={props.width} height={props.height} />
       </NavLink>
     </Box>

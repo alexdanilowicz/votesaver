@@ -91,14 +91,12 @@ function Footer(props) {
           </Grid>
         </Box>
         <Box flexDirection="column">
-          <Link
-            className={classes.link}
+          <Typography
             variant="body1"
-            href="/contact"
-            target="_top"
+            className={classes.link}
           >
             Follow Us
-          </Link>
+          </Typography>
           <Grid item xs={6}>
             <Link className={classes.link} href="https://www.facebook.com/Vote-Saver-102617474944484"><FacebookIcon /></Link>
             <Link className={classes.link} href="https://twitter.com/votesaver"><TwitterIcon /></Link>

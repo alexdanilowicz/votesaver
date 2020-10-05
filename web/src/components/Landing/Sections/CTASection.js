@@ -30,7 +30,7 @@ export default function CTASection(props) {
       <Typography
         variant="h2"
         style={{
-          color: '#323232', marginTop: '5%', textAlign: 'center', fontWeight: '400', marginLeft: '10%', marginRight: '10%',
+          color: '#2d2d2d', marginTop: '5%', textAlign: 'center', fontWeight: '400', marginLeft: '10%', marginRight: '10%',
         }}
       > Make a difference today.
       </Typography>
