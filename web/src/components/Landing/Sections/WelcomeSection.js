@@ -4,7 +4,7 @@ import Box from '@material-ui/core/Box';
 import Fab from '@material-ui/core/Fab';
 import { NavLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-
+import { reactGAEvent } from '../../Core/ReactGAEvent';
 
 const useStyles = makeStyles(theme => ({
   linkNoStyle: {
@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     marginTop: '15%',
     marginBottom: '5%',
     [theme.breakpoints.down('sm')]: {
-      marginTop: '30%',
+      marginTop: '10%',
     },
   },
   bigtitle: {
@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
     fontWeight: '400',
     [theme.breakpoints.down('sm')]: {
       textAlign: 'center',
-      margin: '20px',
+      marginTop: '60px',
       fontWeight: '400',
     },
   },
@@ -35,13 +35,17 @@ const useStyles = makeStyles(theme => ({
     },
   },
   myButton: {
-    backgroundColor: '#FCE757', // TODO(Danilowicz): import this
+    backgroundColor: '#FFDE59', // votesaver primary
     color: 'black',
     textTransform: 'none',
     marginBottom: '20px',
+    fontSize: '20px',
     minWidth: '200px',
     '&:hover': {
-      backgroundColor: '#FCDD0B', // TODO(Danilowicz): import this
+      backgroundColor: '#FFD119', // votesaver secondary
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '14px',
     },
   },
 }));
@@ -56,23 +60,38 @@ export default function WelcomeSection(props) {
       }}
       >
         <Typography className={classes.bigtitle} variant="h2">
-          Worried about long lines at the polls?
+          Cast a Vote, Save a Vote
         </Typography>
       </Box>
       <Box style={{
         marginTop: '2px', display: 'flex', justifyContent: 'center', alignItems: 'center',
       }}
       >
-        <Typography variant="h5" className={classes.typography}>Skip the line or help a voter in need.</Typography>
+        <Typography variant="h5" className={classes.typography}>Make a difference for voters who otherwise may not vote on Election Day.</Typography>
       </Box>
-      <Box style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <a className={classes.linkNoStyle} href="https://forms.gle/mbQ9fVVo4BdfGQqLA">
-          <Fab
-            variant="extended"
-            className={classes.myButton}
-          > Sign up
-          </Fab>
-        </a>
+      <Box style={{ display: 'flex', justifyContent: 'center' }}>
+        <Box style={{ display: 'flex', justifyContent: 'center', margin: '20px' }} onClick={() => reactGAEvent('User', 'Voter Sign Up - Top Section')}>
+          <a className={classes.linkNoStyle} rel="noreferrer" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdglSmU9Aftz2uZrZAKz2ZzNVl9gfLxUwqki4KEN_K8gBtYEw/viewform?usp=sf_link">
+            <Fab
+              variant="extended"
+              className={classes.myButton}
+            > Sign up to be a Vote-Saver
+            </Fab>
+          </a>
+        </Box>
+        <Box style={{ display: 'flex', justifyContent: 'center', margin: '20px' }} onClick={() => reactGAEvent('User', 'Voter Saver Sign Up - Top Section')}>
+          <a className={classes.linkNoStyle}
+            rel="noreferrer"
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAreactGAEventIpQLSelNqO3KWgA5tPoHTNSKUvOGsSOtFfisaAyXVr_lwVMXXRnkg/viewform?usp=sf_link"
+          >
+            <Fab
+              variant="extended"
+              className={classes.myButton}
+            > Sign up to get your Vote Saved
+            </Fab>
+          </a>
+        </Box>
       </Box>
     </Box>
   );

@@ -39,7 +39,7 @@ function Footer(props) {
         className={classes.marginTopForBorder}
       >
         <Box>
-          <CircleLogo width="45px" height="45px" />
+          <CircleLogo width="80px" height="80px" />
         </Box>
         <Box>
           <Grid
@@ -49,23 +49,16 @@ function Footer(props) {
             justify="flex-start"
           >
             <Grid item>
-              <Link
+              <Typography
                 className={classes.link}
                 variant="body1"
-                href="/contact"
-                target="_top"
               >
                 About votesaver.org
-              </Link>
-            </Grid>
-            <Grid item>
-              <Typography>
-                <Link className={classes.link} variant="caption" href="/contact" target="_top"> About</Link>
               </Typography>
             </Grid>
             <Grid item>
               <Typography>
-                <Link className={classes.link} variant="caption" href="/faq" target="_top">FAQ</Link>
+                <Link className={classes.link} variant="caption" href="/" target="_top">About</Link>
               </Typography>
             </Grid>
           </Grid>
@@ -78,20 +71,18 @@ function Footer(props) {
             justify="flex-start"
           >
             <Grid item>
-              <Link
+              <Typography
                 variant="body1"
-                href="/contact"
-                target="_top"
                 className={classes.link}
               >
                 Contact Us
-              </Link>
+              </Typography>
             </Grid>
             <Grid item>
               <Typography>
                 <Link
                   variant="caption"
-                  href="mailto:vote.saver@gmail.com"
+                  href="mailto:votesaver@gmail.com"
                   className={classes.link}
                 >Email Us
                 </Link>
@@ -100,18 +91,16 @@ function Footer(props) {
           </Grid>
         </Box>
         <Box flexDirection="column">
-          <Link
-            className={classes.link}
+          <Typography
             variant="body1"
-            href="/contact"
-            target="_top"
+            className={classes.link}
           >
             Follow Us
-          </Link>
+          </Typography>
           <Grid item xs={6}>
-            <Link className={classes.link} href="https://www.facebook.com/"><FacebookIcon /></Link>
-            <Link className={classes.link} href="https://twitter.com/home"><TwitterIcon /></Link>
-            <Link className={classes.link} href="https://www.instagram.com/p/B5D4ULTgbM3/"><InstagramIcon /></Link>
+            <Link className={classes.link} href="https://www.facebook.com/Vote-Saver-102617474944484"><FacebookIcon /></Link>
+            <Link className={classes.link} href="https://twitter.com/votesaver"><TwitterIcon /></Link>
+            <Link className={classes.link} href="https://www.instagram.com/votesaver/"><InstagramIcon /></Link>
           </Grid>
         </Box>
       </Box>

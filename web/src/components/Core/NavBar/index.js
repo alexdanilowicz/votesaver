@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { connect } from 'react-redux';
-import { withRouter, NavLink } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Box from '@material-ui/core/Box';
 import IconButton from '@material-ui/core/IconButton';
@@ -10,6 +9,7 @@ import Slide from '@material-ui/core/Slide';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/styles';
+import Link from '@material-ui/core/Link';
 
 import MenuIcon from '@material-ui/icons/Menu';
 import TextAndCircleLogo from '../Logo/TextAndCircleLogo';
@@ -36,6 +36,7 @@ const styles = theme => ({
   },
   linkDrawerContainer: {
     padding: '30px 40px',
+    fontSize: '16px',
   },
   menuButton: {
     display: 'none',
@@ -54,11 +55,13 @@ const styles = theme => ({
     margin: '0 24px',
     color: 'initial',
     textDecoration: 'none',
+    fontSize: '16px',
   },
   drawerLink: {
     margin: '12px 0',
     color: 'initial',
     textDecoration: 'none',
+    fontSize: '16px',
   },
   drawerLogo: {
     margin: '24px 0',
@@ -112,9 +115,15 @@ function NavBar(props) {
   const links = (className) => {
     return (
       <React.Fragment>
-        <NavLink className={className} to="/contact">
+        {/* <NavLink className={className} to="/contact">
           <Typography variant="h6"> Contact </Typography>
-        </NavLink>
+        </NavLink> */}
+        <Link
+          variant="caption"
+          href="mailto:votesaver@gmail.com"
+          className={className}
+        >Email Us
+        </Link>
       </React.Fragment>
     );
   };
@@ -124,7 +133,7 @@ function NavBar(props) {
     <HideOnScroll hide={hide}>
       <AppBar className={appBarClassName} color="default">
         <Toolbar>
-          <TextAndCircleLogo width="200px" height="40px" />
+          <TextAndCircleLogo width="200px" height="100px" />
           <Box className={classes.linkContainer} display="flex" alignItems="center">
             {links(classes.link)}
           </Box>
@@ -145,7 +154,7 @@ function NavBar(props) {
               onOpen={() => setDrawer(true)}
             >
               <Box className={classes.linkDrawerContainer} display="flex" flexDirection="column" alignItems="center">
-                <TextAndCircleLogo width="200px" height="40px" />
+                <TextAndCircleLogo width="200px" height="120px" />
                 {links(classes.drawerLink)}
               </Box>
             </SwipeableDrawer>
