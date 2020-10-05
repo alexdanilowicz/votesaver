@@ -16,6 +16,9 @@ const styles = theme => ({
     // minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
+    [theme.breakpoints.down('sm')]: {
+      padding: '20px',
+    },
   },
   fixedRootContainer: {
     padding: '0',
@@ -23,6 +26,9 @@ const styles = theme => ({
     // minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
+    [theme.breakpoints.down('sm')]: {
+      padding: '20px',
+    },
   },
   loadContainer: {
     padding: 0,
@@ -32,6 +38,9 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    [theme.breakpoints.down('sm')]: {
+      padding: '20px',
+    },
   },
 });
 

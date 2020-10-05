@@ -17,13 +17,13 @@ function Landing() {
     <Page fixed hide>
       <WelcomeSection />
       <WordLandingSection1 right>
-        <VotingSVG width="400px" height="400px" />
+        <VotingSVG width="360px" height="400px" />
       </WordLandingSection1>
       <WordLandingSection2 left>
-        <WheelchairSVG width="400px" height="400px" />
+        <WheelchairSVG width="360px" height="400px" />
       </WordLandingSection2>
       <WordLandingSection3 right>
-        <DifferenceSVG width="400px" height="400px" />
+        <DifferenceSVG width="360px" height="400px" />
       </WordLandingSection3>
       <CTASection />
     </Page>

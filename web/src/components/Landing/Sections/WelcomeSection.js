@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     marginTop: '15%',
     marginBottom: '5%',
     [theme.breakpoints.down('sm')]: {
-      marginTop: '10%',
+      marginTop: '20%',
     },
   },
   bigtitle: {
@@ -46,6 +46,7 @@ const useStyles = makeStyles(theme => ({
     },
     [theme.breakpoints.down('sm')]: {
       fontSize: '14px',
+      minWidth: '150px',
     },
   },
 }));
@@ -83,7 +84,7 @@ export default function WelcomeSection(props) {
           <a className={classes.linkNoStyle}
             rel="noreferrer"
             target="_blank"
-            href="https://docs.google.com/forms/d/e/1FAreactGAEventIpQLSelNqO3KWgA5tPoHTNSKUvOGsSOtFfisaAyXVr_lwVMXXRnkg/viewform?usp=sf_link"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSelNqO3KWgA5tPoHTNSKUvOGsSOtFfisaAyXVr_lwVMXXRnkg/viewform?usp=sf_link"
           >
             <Fab
               variant="extended"

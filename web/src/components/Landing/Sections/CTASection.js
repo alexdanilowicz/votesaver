@@ -29,14 +29,14 @@ export default function CTASection(props) {
       <Typography
         variant="h2"
         style={{
-          color: '#2d2d2d', marginTop: '5%', textAlign: 'center', fontWeight: '400', marginLeft: '10%', marginRight: '10%',
+          color: '#2d2d2d', marginTop: '5%', textAlign: 'center', fontWeight: '400', marginLeft: '20px', marginRight: '20px',
         }}
       > Make a difference today.
       </Typography>
       <Typography
         variant="h4"
         style={{
-          color: '#323232', textAlign: 'center', fontWeight: '400', marginLeft: '10%', marginRight: '10%',
+          color: '#323232', textAlign: 'center', fontWeight: '400', marginLeft: '20px', marginRight: '20px',
         }}
       > Signing up takes 30 seconds.
       </Typography>
@@ -51,9 +51,9 @@ export default function CTASection(props) {
             <Fab
               variant="extended"
               style={{
-                backgroundColor: '#ffffff', margin: '50px', minWidth: '200px',
+                backgroundColor: '#ffffff', margin: '20px',
               }}
-            > Help a voter in need.
+            > Help a voter in need
             </Fab>
           </a>
         </Box>
@@ -67,9 +67,9 @@ export default function CTASection(props) {
             <Fab
               variant="extended"
               style={{
-                backgroundColor: '#ffffff', margin: '50px', minWidth: '200px',
+                backgroundColor: '#ffffff', margin: '20px',
               }}
-            > Skip the line.
+            > Skip the line
             </Fab>
           </a>
         </Box>
