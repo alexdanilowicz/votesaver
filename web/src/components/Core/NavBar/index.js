@@ -120,7 +120,7 @@ function NavBar(props) {
         </NavLink> */}
         <Link
           variant="caption"
-          href="mailto:vote.saver@gmail.com"
+          href="mailto:votesaver@gmail.com"
           className={className}
         >Email Us
         </Link>

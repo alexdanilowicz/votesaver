@@ -2,8 +2,6 @@ import React from 'react';
 import {
   BrowserRouter as Router, Route, Switch, withRouter,
 } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
-import { connect } from 'react-redux';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import Theme from './theme';
 import Landing from './Landing';
@@ -36,11 +34,6 @@ function Root(props) {
           <Route component={Landing} />
         </Switch>
       </MuiThemeProvider>
-      <ToastContainer
-        position="top-right"
-        pauseOnHover={false}
-        autoClose={4000}
-      />
     </div>
   );
 }

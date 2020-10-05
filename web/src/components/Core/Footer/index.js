@@ -82,7 +82,7 @@ function Footer(props) {
               <Typography>
                 <Link
                   variant="caption"
-                  href="mailto:vote.saver@gmail.com"
+                  href="mailto:votesaver@gmail.com"
                   className={classes.link}
                 >Email Us
                 </Link>
@@ -100,9 +100,9 @@ function Footer(props) {
             Follow Us
           </Link>
           <Grid item xs={6}>
-            <Link className={classes.link} href="https://www.facebook.com/"><FacebookIcon /></Link>
-            <Link className={classes.link} href="https://twitter.com/home"><TwitterIcon /></Link>
-            <Link className={classes.link} href="https://www.instagram.com/p/B5D4ULTgbM3/"><InstagramIcon /></Link>
+            <Link className={classes.link} href="https://www.facebook.com/Vote-Saver-102617474944484"><FacebookIcon /></Link>
+            <Link className={classes.link} href="https://twitter.com/votesaver"><TwitterIcon /></Link>
+            <Link className={classes.link} href="https://www.instagram.com/votesaver/"><InstagramIcon /></Link>
           </Grid>
         </Box>
       </Box>

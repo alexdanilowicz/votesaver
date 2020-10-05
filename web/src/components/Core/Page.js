@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 
-import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
 import { withStyles } from '@material-ui/styles';
 
 import Footer from './Footer';
@@ -11,24 +11,24 @@ import NavBar from './NavBar';
 
 const styles = theme => ({
   rootContainer: {
-    padding: '10px 0',
-    width: '100vw',
-    minHeight: '100vh',
+    // padding: '10px 0',
+    // width: '100vw',
+    // minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
   },
   fixedRootContainer: {
     padding: '0',
-    width: '100vw',
-    minHeight: '100vh',
+    // width: '100vw',
+    // minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
   },
   loadContainer: {
     padding: 0,
-    width: '100%',
-    height: '100%',
-    flexGrow: 1,
+    // width: '100%',
+    // height: '100%',
+    // flexGrow: 1,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -48,13 +48,13 @@ function Page(props) {
   const content = props.children;
 
   return (
-    <Container className={props.fixed ? classes.rootContainer : classes.fixedRootContainer}>
+    <Box className={props.fixed ? classes.rootContainer : classes.fixedRootContainer}>
       <NavBar fixed={props.fixed} hide={props.hide} />
       <Fade>
         {content}
         <Footer />
       </Fade>
-    </Container>
+    </Box>
   );
 }
 
