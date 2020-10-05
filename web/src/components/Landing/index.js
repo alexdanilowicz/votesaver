@@ -12,7 +12,6 @@ import WordLandingSection3 from './Sections/WordLandingSection3';
 import DifferenceSVG from '../../img/landing-graphics/difference.svg';
 import CTASection from './Sections/CTASection';
 
-
 function Landing() {
   return (
     <Page fixed hide>

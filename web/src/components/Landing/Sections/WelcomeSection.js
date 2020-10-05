@@ -4,7 +4,7 @@ import Box from '@material-ui/core/Box';
 import Fab from '@material-ui/core/Fab';
 import { NavLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-
+import { reactGAEvent } from '../../Core/ReactGAEvent';
 
 const useStyles = makeStyles(theme => ({
   linkNoStyle: {
@@ -70,8 +70,8 @@ export default function WelcomeSection(props) {
         <Typography variant="h5" className={classes.typography}>Make a difference for voters who otherwise may not vote on Election Day.</Typography>
       </Box>
       <Box style={{ display: 'flex', justifyContent: 'center' }}>
-        <Box style={{ display: 'flex', justifyContent: 'center', margin: '20px' }}>
-          <a className={classes.linkNoStyle} href="https://docs.google.com/forms/d/e/1FAIpQLSdglSmU9Aftz2uZrZAKz2ZzNVl9gfLxUwqki4KEN_K8gBtYEw/viewform?usp=sf_link">
+        <Box style={{ display: 'flex', justifyContent: 'center', margin: '20px' }} onClick={() => reactGAEvent('User', 'Voter Sign Up - Top Section')}>
+          <a className={classes.linkNoStyle} rel="noreferrer" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdglSmU9Aftz2uZrZAKz2ZzNVl9gfLxUwqki4KEN_K8gBtYEw/viewform?usp=sf_link">
             <Fab
               variant="extended"
               className={classes.myButton}
@@ -79,8 +79,12 @@ export default function WelcomeSection(props) {
             </Fab>
           </a>
         </Box>
-        <Box style={{ display: 'flex', justifyContent: 'center', margin: '20px' }}>
-          <a className={classes.linkNoStyle} href=" https://docs.google.com/forms/d/e/1FAIpQLSelNqO3KWgA5tPoHTNSKUvOGsSOtFfisaAyXVr_lwVMXXRnkg/viewform?usp=sf_link">
+        <Box style={{ display: 'flex', justifyContent: 'center', margin: '20px' }} onClick={() => reactGAEvent('User', 'Voter Saver Sign Up - Top Section')}>
+          <a className={classes.linkNoStyle}
+            rel="noreferrer"
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAreactGAEventIpQLSelNqO3KWgA5tPoHTNSKUvOGsSOtFfisaAyXVr_lwVMXXRnkg/viewform?usp=sf_link"
+          >
             <Fab
               variant="extended"
               className={classes.myButton}

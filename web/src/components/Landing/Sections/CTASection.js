@@ -1,10 +1,9 @@
 import React from 'react';
-import {
-  Box, Card, CardContent, Link, Typography,
-} from '@material-ui/core';
+import Box from '@material-ui/core/Box';
+import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
-import { withRouter, NavLink } from 'react-router-dom';
+import { reactGAEvent } from '../../Core/ReactGAEvent';
 
 const useStyles = makeStyles({
   background: {
@@ -42,24 +41,38 @@ export default function CTASection(props) {
       > Signing up takes 30 seconds.
       </Typography>
       <Box style={{ display: 'flex' }}>
-        <a className={classes.linkNoStyle} href="https://docs.google.com/forms/d/e/1FAIpQLSdglSmU9Aftz2uZrZAKz2ZzNVl9gfLxUwqki4KEN_K8gBtYEw/viewform?usp=sf_link">
-          <Fab
-            variant="extended"
-            style={{
-              backgroundColor: '#ffffff', margin: '50px', minWidth: '200px',
-            }}
-          > Help a voter in need.
-          </Fab>
-        </a>
-        <a className={classes.linkNoStyle} href="https://docs.google.com/forms/d/e/1FAIpQLSelNqO3KWgA5tPoHTNSKUvOGsSOtFfisaAyXVr_lwVMXXRnkg/viewform?usp=sf_link">
-          <Fab
-            variant="extended"
-            style={{
-              backgroundColor: '#ffffff', margin: '50px', minWidth: '200px',
-            }}
-          > Skip the line.
-          </Fab>
-        </a>
+        <Box onClick={() => reactGAEvent('User', 'Voter Saver Up - Bottom Section')}>
+          <a
+            className={classes.linkNoStyle}
+            rel="noreferrer"
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdglSmU9Aftz2uZrZAKz2ZzNVl9gfLxUwqki4KEN_K8gBtYEw/viewform?usp=sf_link"
+          >
+            <Fab
+              variant="extended"
+              style={{
+                backgroundColor: '#ffffff', margin: '50px', minWidth: '200px',
+              }}
+            > Help a voter in need.
+            </Fab>
+          </a>
+        </Box>
+        <Box onClick={() => reactGAEvent('User', 'Voter Sign Up - Bottom Section')}>
+          <a
+            className={classes.linkNoStyle}
+            rel="noreferrer"
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSelNqO3KWgA5tPoHTNSKUvOGsSOtFfisaAyXVr_lwVMXXRnkg/viewform?usp=sf_link"
+          >
+            <Fab
+              variant="extended"
+              style={{
+                backgroundColor: '#ffffff', margin: '50px', minWidth: '200px',
+              }}
+            > Skip the line.
+            </Fab>
+          </a>
+        </Box>
       </Box>
     </Box>
   );

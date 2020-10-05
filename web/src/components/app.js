@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router, Route, Switch, withRouter,
 } from 'react-router-dom';
 import { MuiThemeProvider } from '@material-ui/core/styles';
+import ReactGA from 'react-ga';
 import Theme from './theme';
 import Landing from './Landing';
 
@@ -18,11 +19,10 @@ import Landing from './Landing';
 // import 'react-toastify/dist/ReactToastify.css';
 // import '../styles/index.scss';
 // import { axiosInstance } from '../util/axiosConfig';
-// import ReactGA from 'react-ga';
 
 
 // TODO(Danilowicz)
-// ReactGA.initialize('UA-145255393-1');
+ReactGA.initialize('UA-179608106-1');
 
 
 function Root(props) {
