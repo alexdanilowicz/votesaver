@@ -9,12 +9,10 @@ const useStyles = makeStyles({
   background: {
     backgroundColor: '#FFD119', // TODO(alex): figure out how to access MUI theme here and in button below
     margin: '0px 0px 70px 0px',
-    minHeight: '300px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    maxWidth: '100%',
   },
   linkNoStyle: {
     textDecoration: 'none',
