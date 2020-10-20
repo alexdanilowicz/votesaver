@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
       backgroundColor: '#FFD119', // votesaver secondary
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: '14px',
+      fontSize: '12px',
       minWidth: '150px',
     },
   },
@@ -61,14 +61,14 @@ export default function WelcomeSection(props) {
       }}
       >
         <Typography className={classes.bigtitle} variant="h2">
-          Cast a Vote, Save a Vote
+          Save a Vote in the 2020 Election
         </Typography>
       </Box>
       <Box style={{
         marginTop: '2px', display: 'flex', justifyContent: 'center', alignItems: 'center',
       }}
       >
-        <Typography variant="h5" className={classes.typography}>Make a difference for voters who otherwise may not vote on Election Day.</Typography>
+        <Typography variant="h5" className={classes.typography}>Stand in line to stand up for democracy.</Typography>
       </Box>
       <Box style={{ display: 'flex', justifyContent: 'center' }}>
         <Box style={{ display: 'flex', justifyContent: 'center', margin: '20px' }} onClick={() => reactGAEvent('User', 'Voter Sign Up - Top Section')}>
@@ -76,7 +76,7 @@ export default function WelcomeSection(props) {
             <Fab
               variant="extended"
               className={classes.myButton}
-            > Sign up to be a Vote-Saver
+            > Vote Saver Sign Up
             </Fab>
           </a>
         </Box>
@@ -89,7 +89,7 @@ export default function WelcomeSection(props) {
             <Fab
               variant="extended"
               className={classes.myButton}
-            > Sign up to get your Vote Saved
+            > Voter Sign Up
             </Fab>
           </a>
         </Box>

@@ -73,9 +73,8 @@ export default function WordLandingSection1(props) {
           </Typography>
           <Box paddingTop="20px" display="flex">
             <Typography variant="h6" className={classes.typography}>
-              {'Lines can be really long at the polls on Election Day, even in early voting.\
-                This year, long lines will especially harm elderly people with high COVID risk,\
-                and essential workers who can\'t take time off work.'}
+              {'In every election, long lines make it hard to vote. This year, \
+              COVID-19 is making it even harder, especially for seniors with high COVID risk and essential workers who can\'t take time off work.'}
             </Typography>
           </Box>
           {
@@ -105,9 +104,8 @@ export default function WordLandingSection1(props) {
           </Typography>
           <Box paddingTop="20px">
             <Typography variant="h6" className={classes.typography}>
-              {'Lines can be really long at the polls on Election Day, even in early voting. \
-                This year, long lines will especially harm elderly people with high COVID risk, \
-                and essential workers who can\'t take time off work.'}
+              {'In every election, long lines make it hard to vote. This year, \
+              COVID-19 is making it even harder, especially for seniors with high COVID risk and essential workers who can\'t take time off work.'}
             </Typography>
           </Box>
           {

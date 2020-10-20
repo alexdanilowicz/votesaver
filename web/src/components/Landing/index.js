@@ -22,9 +22,6 @@ function Landing() {
       <WordLandingSection2 left>
         <WheelchairSVG width="360px" height="400px" />
       </WordLandingSection2>
-      <WordLandingSection3 right>
-        <DifferenceSVG width="360px" height="400px" />
-      </WordLandingSection3>
       <CTASection />
     </Page>
   );
