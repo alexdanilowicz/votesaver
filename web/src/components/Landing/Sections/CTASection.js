@@ -29,14 +29,14 @@ export default function CTASection(props) {
         style={{
           color: '#2d2d2d', marginTop: '5%', textAlign: 'center', fontWeight: '400', marginLeft: '20px', marginRight: '20px',
         }}
-      > Make a difference today.
+      > Sign up today. Show up on election day.
       </Typography>
       <Typography
         variant="h4"
         style={{
           color: '#323232', textAlign: 'center', fontWeight: '400', marginLeft: '20px', marginRight: '20px',
         }}
-      > Signing up takes 30 seconds.
+      > This is a volunteer based and not-for-profit initiative.
       </Typography>
       <Box style={{ display: 'flex' }}>
         <Box onClick={() => reactGAEvent('User', 'Voter Saver Up - Bottom Section')}>
@@ -51,7 +51,7 @@ export default function CTASection(props) {
               style={{
                 backgroundColor: '#ffffff', margin: '20px',
               }}
-            > Help a voter in need
+            > Vote Saver Sign Up
             </Fab>
           </a>
         </Box>
@@ -67,7 +67,7 @@ export default function CTASection(props) {
               style={{
                 backgroundColor: '#ffffff', margin: '20px',
               }}
-            > Skip the line
+            > Voter Sign Up
             </Fab>
           </a>
         </Box>

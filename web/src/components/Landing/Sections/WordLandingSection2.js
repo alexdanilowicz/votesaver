@@ -68,11 +68,12 @@ export default function WordLandingSection2(props) {
         </Box>
         <Box display="flex" flexDirection="column" className={classes.textContainer}>
           <Typography variant="h3" className={classes.typography}>
-            We created Vote-Saver to ensure those votes are cast.
+            We created Vote Saver to ensure those votes are cast.
           </Typography>
           <Box paddingTop="20px" display="flex">
             <Typography variant="h6" className={classes.typography}>
-              {'We\'re bringing together an army to stand for democracy and protect people\'s right to vote, especially those who want to vote but can\'t wait in line.'}
+              {'Vote Saver volunteers will stand in lines at select polling centers. \
+               When seniors or essential workers arrive, we’ll escort them to the front of the line, where they’ll swap places, register, and cast a vote.'}
             </Typography>
           </Box>
           {
@@ -98,11 +99,12 @@ export default function WordLandingSection2(props) {
         </Box>
         <Box display="flex" flexDirection="column" className={classes.textContainer}>
           <Typography variant="h3" className={classes.typography}>
-            We created Vote-Saver to ensure those votes are cast.
+            We created Vote Saver to ensure those votes are cast.
           </Typography>
           <Box paddingTop="20px">
             <Typography variant="h6" className={classes.typography}>
-              {'We\'re bringing together an army to stand for democracy and protect people\'s right to vote, especially those who want to vote but can\'t wait in line.'}
+              {'Vote Saver volunteers will stand in lines at select polling centers. \
+               When seniors or essential workers arrive, we’ll escort them to the front of the line, where they’ll swap places, register, and cast a vote.'}
             </Typography>
           </Box>
           {
