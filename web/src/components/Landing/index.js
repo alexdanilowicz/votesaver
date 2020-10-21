@@ -7,9 +7,8 @@ import VotingSVG from '../../img/landing-graphics/voting.svg';
 
 import WordLandingSection2 from './Sections/WordLandingSection2';
 import WheelchairSVG from '../../img/landing-graphics/wheelchair.svg';
+import MediaSection from './Sections/MediaSection';
 
-import WordLandingSection3 from './Sections/WordLandingSection3';
-import DifferenceSVG from '../../img/landing-graphics/difference.svg';
 import CTASection from './Sections/CTASection';
 
 function Landing() {
@@ -22,6 +21,7 @@ function Landing() {
       <WordLandingSection2 left>
         <WheelchairSVG width="360px" height="400px" />
       </WordLandingSection2>
+      <MediaSection />
       <CTASection />
     </Page>
   );

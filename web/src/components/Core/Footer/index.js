@@ -53,12 +53,23 @@ function Footer(props) {
                 className={classes.link}
                 variant="body1"
               >
-                About votesaver.org
+                <Link
+                  variant="body1"
+                  href="https://venmo.com/votesaver"
+                  className={classes.link}
+                >
+                  Donate
+                </Link>
               </Typography>
             </Grid>
             <Grid item>
               <Typography>
-                <Link className={classes.link} variant="caption" href="/" target="_top">About</Link>
+                <Link
+                  variant="caption"
+                  href="https://venmo.com/votesaver"
+                  className={classes.link}
+                > Make a donation with Venmo @votesaver
+                </Link>
               </Typography>
             </Grid>
           </Grid>
